@@ -3,11 +3,12 @@ import { navData } from "../data";
 import logo from "../images/navLogo.svg"
 import "../css/navbar.css"
 
+
 const NavBar = () => {
   return (
       <nav>
-        <ul className="nav__links">
-            <li className="nav__link">
+        <ul className="nav__links ">
+            <li className="nav__link" id="nav__logo">
                 <img src={logo} alt=""/>
             </li>
           {navData.map((i, idx) => {
@@ -20,6 +21,7 @@ const NavBar = () => {
             );
           })}
         </ul>
+
       </nav>
   );
 };

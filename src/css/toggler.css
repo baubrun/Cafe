@@ -1,0 +1,38 @@
+@import "./App.css";
+
+
+.video__switch-container {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .video__switch-container {
+        color: var(--brown);
+        bottom: 5%;
+        right: 5%;
+        display: block;
+        position: absolute;
+        z-index: 10;
+    }
+    .video__switch {
+        background-color: var(--yellow);
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.25rem;
+        position: relative;
+        text-transform: uppercase;
+        width: 5rem;
+    }
+    .video__switch-btn{
+        background-color: var(--brown);
+        border-radius: 1rem;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+    }
+}
+
+

@@ -4,6 +4,8 @@ import "../css/header.css"
 import mp4 from "../video/coffee.mp4"
 import ogv from "../video/coffee.ogv"
 import webm from "../video/coffee.webm"
+import Toggler from './Toggler'
+
 
 
 const Header = () => {
@@ -28,10 +30,13 @@ const Header = () => {
               <source src={webm} type="video/mp4"/>
               Your browser does not support video.
           </video>
+
       </article>
       <div className="menuBtn">
           <i className="fas fa-bars"></i>
       </div>
+      <Toggler />
+
     </header>
   );
 };

@@ -1,5 +1,11 @@
 @import "./App.css";
 
+
+#nav__logo:hover{
+    background-color: var(--yellow);
+    padding-left: 1rem;
+}
+
 nav {
     background-color: rgba(242,180,80,0.9);
     height: 100%;
@@ -15,8 +21,17 @@ nav {
     color: var(--brown);
     display: block;
     font-size: 1.5rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+}
+.nav__link:hover{
+    background-color: var(--brown);
+    color: var(--yellow);
+    padding-left: 1.5rem;
 }
 
+.nav__links{
+    list-style-type: none;
+}
