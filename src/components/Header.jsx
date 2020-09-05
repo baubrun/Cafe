@@ -1,6 +1,9 @@
 import React from "react";
 import { socialData } from "./data";
 import "../css/header.css"
+import mp4 from "../video/coffee.mp4"
+import ogv from "../video/coffee.ogv"
+import webm from "../video/coffee.webm"
 
 
 const Header = () => {
@@ -18,6 +21,17 @@ const Header = () => {
           })}
         </div>
       </div>
+      <article className="video__container">
+          <video className="video__item" autoPlay muted loop>
+              <source src={mp4} type="video/mp4"/>
+              <source src={ogv} type="video/mp4"/>
+              <source src={webm} type="video/mp4"/>
+              Your browser does not support video.
+          </video>
+      </article>
+      <nav>
+          <i className="fas fa-bars"></i>
+      </nav>
     </header>
   );
 };
