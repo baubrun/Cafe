@@ -5,9 +5,9 @@ import "../css/header.css"
 
 const Header = () => {
   return (
-    <header className="header" id="header">
+    <header id="header">
       <div className="banner">
-        <h1 className="banner__title bell-fonts">Cafe</h1>
+        <h1 className="banner__title bell-fonts">Café Café</h1>
         <div className="banner__icons">
           {socialData.map((icon, idx) => {
             return (
