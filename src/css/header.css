@@ -59,7 +59,10 @@ header {
     }
 }
 
-nav {
+.menuBtn {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: pulse;
     color: var(--brightYellow);
     cursor: pointer;
     font-size: 3.5rem;
@@ -67,6 +70,12 @@ nav {
     top: 5%;
     right: 5%;
 }
+@keyframes pulse {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.5)}
+    100% {transform: scale(1)}
+}
+
 
 .video__container {
     position: absolute;

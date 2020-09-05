@@ -1,5 +1,5 @@
 import React from "react";
-import { socialData } from "./data";
+import { socialData } from "../data";
 import "../css/header.css"
 import mp4 from "../video/coffee.mp4"
 import ogv from "../video/coffee.ogv"
@@ -29,9 +29,9 @@ const Header = () => {
               Your browser does not support video.
           </video>
       </article>
-      <nav>
+      <div className="menuBtn">
           <i className="fas fa-bars"></i>
-      </nav>
+      </div>
     </header>
   );
 };

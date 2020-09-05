@@ -1,0 +1,22 @@
+@import "./App.css";
+
+nav {
+    background-color: rgba(242,180,80,0.9);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    z-index: 10;
+}
+
+
+.nav__link{
+    color: var(--brown);
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
