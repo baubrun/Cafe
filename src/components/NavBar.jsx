@@ -4,9 +4,13 @@ import logo from "../images/navLogo.svg"
 import "../css/navbar.css"
 
 
-const NavBar = () => {
+const NavBar = (props) => {
+
+
+
+
   return (
-      <nav>
+      <nav className={`nav ${props.showNav? "nav-show" : "nav-hide" }`}>
         <ul className="nav__links ">
             <li className="nav__link" id="nav__logo">
                 <img src={logo} alt=""/>

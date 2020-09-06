@@ -8,7 +8,10 @@ import Toggler from './Toggler'
 
 
 
-const Header = () => {
+
+const Header = (props) => {
+
+
   return (
     <header id="header">
       <div className="banner">
@@ -32,7 +35,7 @@ const Header = () => {
           </video>
 
       </article>
-      <div className="menuBtn">
+      <div onClick={() => props.toggleNav()} className="menuBtn">
           <i className="fas fa-bars"></i>
       </div>
       <Toggler />

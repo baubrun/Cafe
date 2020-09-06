@@ -1,0 +1,16 @@
+@import "./App.css";
+
+
+
+.loader {
+    align-items: center;
+    background-color: var(--yellow);
+    bottom: 0;
+    display: grid;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
