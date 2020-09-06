@@ -12,17 +12,21 @@ window.addEventListener("load", () => {
 
 const App = () => {
 
-  const [showNav, setShowNav] = useState(false)
+  const [isNavShow, setIsNavShow] = useState(false)
 
+  
   const toggleNav = () => {
-    setShowNav(!showNav)
+    setIsNavShow(!isNavShow)
   }
+
 
   return (
     <>
       <Loader />
-      <Header toggleNav={toggleNav}/>
-      <NavBar showNav={showNav}/>
+      <Header 
+      toggleNav={toggleNav} 
+      />
+      <NavBar isNavShow={isNavShow}/>
     </>
   );
 };

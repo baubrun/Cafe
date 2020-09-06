@@ -27,11 +27,19 @@
     .video__switch-btn{
         background-color: var(--brown);
         border-radius: 1.3rem;
+        cursor: pointer;
         height: 100%;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 50%;
         width: 50%;
+    }
+    .video-on{
+        left: 50%;
+    }
+    .video-off{
+        left: 0;
+      
     }
 }
 
