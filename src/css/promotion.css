@@ -1,0 +1,40 @@
+@import "./root.css";
+
+.error {
+    border-color: red;
+    display: block;
+    color: red;
+}
+
+
+.promotion {
+    background-color: var(--brown);
+    color: var(--brightYellow);
+    text-transform: capitalize;
+}
+
+.promotion-form__title,
+.promotion-card__title {
+    font-size: 3rem;
+}
+
+
+.promotion-form, .promotion-card {
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+    row-gap: 1.25rem;
+    text-align: center;
+}
+
+.promotion-form__feedback {
+    border: 0.1rem solid var(--brightYellow);
+    padding: 0.25rem;
+}
+
+
+.success {
+    border-color: green;
+    display: block;
+    color: green;
+}
