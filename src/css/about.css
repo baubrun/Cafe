@@ -1,10 +1,25 @@
 @import "./root.css";
 
-
+.about-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr;
+}
 
 .about__img-item {
+    height: 100%;
     width: 100%;
 }
+@media screen and (min-width:768px){
+    .about__img-flip{
+        order: -1;
+    }
+    .about-container{
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
 
 .grid-container {
     display: grid;

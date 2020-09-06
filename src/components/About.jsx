@@ -20,7 +20,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="about__img">
+          <div className="about__img ">
               <img className="about__img-item" src={img1} alt="about"/>
           </div>
         </article>
@@ -37,7 +37,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="about__img">
+          <div className="about__img about__img-flip">
               <img className="about__img-item" src={img2} alt="about"/>
           </div>
         </article>
