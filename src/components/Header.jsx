@@ -26,7 +26,7 @@ const Header = (props) => {
   return (
     <header id="header">
       <div className="banner">
-        <h1 className="banner__title bell-fonts">Café Café</h1>
+        <h1 className="banner__title belle-font">Café Café</h1>
         <div className="banner__icons">
           {socialData.map((icon, idx) => {
             return (

@@ -1,0 +1,53 @@
+@import "./root.css";
+
+
+
+.about__img-item {
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    row-gap: 2rem;
+    margin: 2rem auto;
+    max-width: 90vw;
+}
+@media screen and (min-width:768px){
+    .grid-container--md-2{
+        column-gap: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-container {
+        max-width: 75vw;
+    }
+}
+
+
+.section-padding {
+    padding: 3rem;
+}
+
+
+.section-title{
+    padding: 1rem 0.5rem;
+}
+
+.section-title__name {
+    font-size: 3rem;
+}
+
+
+.section-title__text{
+    color: var(--grey);
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.section-title__underline{
+    background-color: var(--yellow);
+    height: 0.25rem;
+    width: 5rem;
+}
+

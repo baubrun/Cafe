@@ -1,4 +1,4 @@
-@import "./App.css";
+@import "./root.css";
 
 .banner {
     text-align: center;
@@ -69,6 +69,7 @@ header {
     position: fixed;
     top: 5%;
     right: 5%;
+    z-index: 900;
 }
 @keyframes pulse {
     0% {transform: scale(1)}

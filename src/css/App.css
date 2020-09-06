@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore|Open+Sans');
+@import "./root.css";
 
-
-:root {
-  --brightYellow: rgb(227, 181, 5);
-  --darkBrown: #BB9457;
-  --yellow: rgb(242, 180, 80);
-  --brown: #382923;
-  --black: #191919;
-  --grey: #A9B2AC;
-}
 
 
 * {
@@ -28,7 +20,7 @@ body {
 
 }
 
-.bell-fonts {
+.belle-font {
   font-family: 'La Belle Aurore', cursive;
 
 }
