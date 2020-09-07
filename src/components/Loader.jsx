@@ -1,5 +1,4 @@
 import React from 'react'
-import loader from "../images/preloader.gif"
 import "../css/loader.css"
 
 
@@ -9,7 +8,9 @@ import "../css/loader.css"
 const Loader = () => {
     return (
         <div className="loader">
-            <img className="loader__item" src={loader} alt="loading..."/>
+            <img className="loader__item" 
+                src={require("../images/preloader.gif")}
+                alt="loading..."/>
         </div>
     )
 }

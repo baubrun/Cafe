@@ -67,13 +67,6 @@
     text-align: center;
 }
 
-.promotion-form__feedback {
-    border: 0.1rem solid var(--brightYellow);
-    display: none;
-    padding: 0.25rem;
-}
-
-
 .services-container {
     margin: 2rem auto;
     max-width: 90vw;

@@ -3,13 +3,10 @@ import "../css/promotion.css"
 
 
 const Promotion = () => {
-    const winners = ["asdf"]
     return (
         <section className="promotion section-padding" id="promotion">
             <div className="grid-container">
                 <form className="promotion-form">
-
-                    <p className="promotion-form__feedback">some text</p>
 
                     <h3 className="promotion-form__title belle-font">to get a free drink</h3>
                     

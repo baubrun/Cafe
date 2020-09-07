@@ -1,6 +1,6 @@
 import React from "react";
 import { navData } from "../data";
-import logo from "../images/navLogo.svg"
+// import logo from "../images/navLogo.svg"
 import "../css/navbar.css"
 
 
@@ -10,7 +10,9 @@ const NavBar = (props) => {
       <nav className={`nav ${props.isNavShow? "nav-show" : "nav-hide" }`}>
         <ul className="nav__links ">
             <li className="nav__link" id="nav__logo">
-                <img src={logo} alt=""/>
+                <img
+                src={require("../images/navLogo.svg")}
+                alt=""/>
             </li>
           {navData.map((i, idx) => {
             return (

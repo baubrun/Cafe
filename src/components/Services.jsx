@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "../css/services.css";
 import ImgModal from "./ImgModal";
 
@@ -11,6 +11,17 @@ const serviceItems = () => {
 };
 
 const Services = () => {
+  const [imgId, setImgId] = useState(null)
+  const [showImgModal, setShowImgModal] = useState(false);
+
+  const getImgId = (id) => {
+    setImgId(id)
+  }
+
+  const toggleModal = () => {
+    setShowImgModal(!showImgModal);
+  };
+
   return (
     <section className="services section-padding" id="services">
       <div className="section-title section-title-left">
@@ -21,23 +32,35 @@ const Services = () => {
       <div className="services-container">
         {/* service item */}
         {serviceItems().map((item, idx) => {
+          let id = idx + 1
           return (
-            <article key={idx} className={`service-item item-${idx + 1}`}>
-              <img
+            <article
+             key={idx}
+              className={`service-item item-${id}`}>
+              <img 
                 className="service-item__img"
-                src={require(`../images/${item}`)}
-                alt={`service-item-${idx + 1}`}
+                src={`../images/${item}`}
+                alt={`service-item-${id}`}
               />
-              <a href="" className="service-item__icon" data-id={idx + 1}>
+              <div
+                onClick={() => {
+                  getImgId(id);
+                  toggleModal()
+                }}
+
+               className="service-item__icon" data-id={id}>
                 <i className="fas fa-search"></i>
-              </a>
+              </div>
             </article>
           );
         })}
         {/* end of service item */}
       </div>
 
-      <ImgModal />
+      <ImgModal 
+      showImgModal={showImgModal}
+      toggleModal={toggleModal}
+      imgId={imgId}/>
     </section>
   );
 };

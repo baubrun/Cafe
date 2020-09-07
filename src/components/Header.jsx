@@ -9,7 +9,7 @@ import Toggler from "./VideoToggler";
 const Header = (props) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
 
-  const videoRef = useRef(null);
+  const videoRef = useRef(false);
 
   const handlePlay = () => {
     if (isVideoPlaying) {
@@ -30,9 +30,9 @@ const Header = (props) => {
         <div className="banner__icons">
           {socialData.map((icon, idx) => {
             return (
-              <a key={idx} href="#" className="banner__social-icon">
+              <div key={idx} className="banner__social-icon">
                 <i className={`fab fa-${icon} fa-fw`}></i>
-              </a>
+              </div>
             );
           })}
         </div>
