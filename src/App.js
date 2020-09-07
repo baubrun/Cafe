@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Loader from "./components/Loader";
 import About from "./components/About";
 import Promotion from "./components/Promotion";
+import Services from "./components/Services";
 
 window.addEventListener("load", () => {
   document.querySelector(".loader").style.display = "none";
@@ -25,6 +26,7 @@ const App = () => {
       <Header toggleNav={toggleNav} />
       <About />
       <Promotion />
+      <Services />
     </>
   );
 };
