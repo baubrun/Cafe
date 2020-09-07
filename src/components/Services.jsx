@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/services.css";
+import ImgModal from "./ImgModal";
 
 const serviceItems = () => {
   let l = [];
@@ -27,7 +28,7 @@ const Services = () => {
                 src={require(`../images/${item}`)}
                 alt={`service-item-${idx + 1}`}
               />
-              <a href="#" className="service-item__icon" data-id={idx + 1}>
+              <a href="" className="service-item__icon" data-id={idx + 1}>
                 <i className="fas fa-search"></i>
               </a>
             </article>
@@ -35,6 +36,8 @@ const Services = () => {
         })}
         {/* end of service item */}
       </div>
+
+      <ImgModal />
     </section>
   );
 };

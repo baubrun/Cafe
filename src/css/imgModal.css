@@ -1,0 +1,49 @@
+@import "./root.css";
+
+
+.service-modal {
+    display: none;
+}
+
+.service-modal-show {
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    display: grid;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+@media screen and (min-width:768px){
+    .service-modal__item{
+      height: 80vh;
+      width: 60vw;
+    }
+  }
+
+.service-modal__item{
+    background-image: url("../images/work-1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.5rem solid var(--yellow);
+    border-radius: 0.4rem;
+    height: 70vh;
+    width: 80vw;
+}
+
+.service-modal__close{
+    color: var(--brightYellow);
+    bottom: 5%;
+    font-size: 3rem;
+    right: 5%;
+    position:fixed;
+}
+
+.service-modal__close:hover{
+    color: red;
+    transition: all 0.5s ease-in-out;
+}
