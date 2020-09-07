@@ -1,6 +1,5 @@
 import React from "react";
 import { navData } from "../data";
-// import logo from "../images/navLogo.svg"
 import "../css/navbar.css"
 
 

@@ -11,20 +11,12 @@ export const navData = [
         name: "home"
     },
     {
-        href: "#coffees",
-        name: "coffees"
+        href: "#services",
+        name: "services"
     },
     {
-        href: "#work",
-        name: "work"
-    },
-    {
-        href: "#free-drink",
+        href: "#promotion",
         name: "free drink"
-    },
-    {
-        href: "#contact",
-        name: "contact"
     },
     {
         href: "#about",
